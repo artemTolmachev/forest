@@ -1078,6 +1078,16 @@ input:focus {
   transition: .9s;
   padding: 50px 37px 0 37px;
 }
+.mobile-menu .navigation-link {
+  transition: .5s;
+  border-bottom: 2px solid;
+  width: fit-content;
+}
+.mobile-menu .navigation-link:hover {
+  border-bottom: 2px solid rgba(128, 143, 28, 0.549);
+  transition: .5s;
+  color: rgba(128, 143, 28, 0.549);
+}
 @media (min-width: 425px) {
   .mobile-menu {
     padding: 50px 24px 0 24px;
@@ -1172,16 +1182,6 @@ input:focus {
   display: flex;
   flex-direction: column;
   font-size: 22px;
-}
-.navigation-link {
-  transition: .5s;
-  border-bottom: 2px solid;
-  width: fit-content;
-}
-.navigation-link:hover {
-  border-bottom: 2px solid rgba(128, 143, 28, 0.549);
-  transition: .5s;
-  color: rgba(128, 143, 28, 0.549);
 }
 .footer {
   padding-top: 60px;
