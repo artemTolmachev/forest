@@ -8,14 +8,71 @@ html {
     color: #31405b;
     font-family: 'PT Sans', sans-serif;
   }
+  body.nonescroll {
+    overflow: hidden;
+  }
   body, h1, h2, h3, div, p, ul {
     margin: 0;
     padding: 0;
   }
   .container {
-    margin-right: auto;
+    width: 285px;
     margin-left: auto;
-    width: 1170px;
+    margin-right: auto;
+
+    @media (min-width: 425px) {
+      width: 300px;
+    }
+    @media (min-width: 680px) {
+      width: 650px;
+      padding: 0 15px;
+    }
+    @media (min-width: 768px) {
+      margin-right: auto;
+      margin-left: auto;
+      width: 738px;
+      
+    }
+    @media (min-width: 1200px) {
+      width: 1170px;
+      padding: 0;
+    }
+  }
+  .header-inner {
+    padding-bottom: 30px;
+     padding-top: 30px;
+     background-image: url(../image/header-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
+      .logo {
+        display: none;
+      }
+    @media (min-width: 680px) {
+    padding-bottom: 38px;
+    padding-top: 12px;
+
+      .logo {
+        display: block;
+      }
+
+    }
+
+     @media (min-width: 768px) {
+      padding-bottom: 25px;
+      padding-top: 25px;
+      .toggle-menu {
+        top: 30px;
+        right: 30px;
+      }
+    }
+   
+    @media (min-width: 1200px) {
+      .toggle-menu {
+        display: none;
+      }
+    }
   }
   .container::after {
     content: "";
@@ -23,17 +80,17 @@ html {
     clear: both;
   }
   .float-left {
-    float: left;
+    
+    @media (min-width: 680px) {
+      float: left;
+    }
+
   }
   .float-right {
-    float: right;
+    @media (min-width: 680px) {
+      float: right;
+    }
+
   }
 
-  .header-inner {
-    padding-bottom: 25px;
-     padding-top: 25px;
-     background-image: url("../../image/header-inner-bg.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
- }
+  

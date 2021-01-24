@@ -1,7 +1,12 @@
 
-
 .section-content {
-    padding: 120px 0;
+    padding: 40px 0;
+    @media (min-width: 768px) {
+        padding: 60px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 120px 0;
+    }
 }
 .row::after {
     content: "";
@@ -9,28 +14,80 @@
     clear: both;
 }
 .row-top{
-    margin-bottom: 120px;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 120px;
+    }
 }
 .content-description {
-    width: 470px;
+    width: 285px;
+    margin-bottom: 30px;
+
+    @media (min-width: 680px) {
+        width: 50%;
+        max-width: 285px;
+    }
+    @media (min-width: 768px) {
+        width: 50%;
+        max-width: 400px;
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+        width: 470px;
+        max-width: unset;
+    }
 }
 
 .content-title {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 26px;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 54px;
+    }
 }
 .aline-center {
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 26px;
+
+    @media (min-width: 768px) {
+    margin-bottom: 35px;
+    }
+    @media (min-width: 1200px) {
+    
+    }
 }
 .content-text {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+    @media (min-width: 1200px) {
+    
+    }
+    
 }
 .content-text p {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.6;
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
 }
 .content-text a {
     color: #71bbe2;
@@ -45,6 +102,7 @@
 .button {
     display: inline-block;
     padding: 16px 41px 15px  41px;
+    border: 1px solid #0ac883; 
     border-radius: 50px;
     text-decoration: none;
     background-color: #0ac883;
@@ -71,4 +129,30 @@
     &:hover::after {
         box-shadow: 0 0 20px #000000;
     }
+    display: none;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        padding: 5px 41px 5px 49px;
+        display: inline-block;
+    }
+    @media (min-width: 1200px) {
+        padding: 16px 49px 15px 49px;
+    }
+   
+}
+.content-image {
+    
+    @media (min-width: 680px) {
+        width: 50%;
+    }
+    @media (min-width: 768px) {
+        width: 50%;
+        max-width: 300px;
+    
+    }
+    @media (min-width: 1200px) {
+        max-width: unset;
+    }
+   
 }

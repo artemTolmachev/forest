@@ -1,20 +1,48 @@
 .section-content-article {
-    padding-top: 63px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 60px;
     background-color: #f2f8f6;
+
+    @media (min-width: 768px) {
+        padding-top: 63px;
+        padding-bottom: 120px;
+    }
+
   }
   .float-left-col {
     width: 270px;
-    padding-top: 7px;
+    margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+        padding-top: 7px;
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+    
+    }
   }
   .subtitle-list {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 24px;
+    @media (min-width: 768px) {
     margin-bottom: 25px;
     font-size: 28px;
-    font-weight: 700;
+    }
+    @media (min-width: 1200px) {
+    
+    }
   }
   
 .article-list {
     list-style-type: none;
+
+    @media (min-width: 768px) {
+        margin-bottom: 16px;
+    }
+    @media (min-width: 1200px) {
+    
+    }
 }
 .article-list a {
     padding: 15px 0px;
@@ -38,16 +66,31 @@
     border-top: 1px solid rgb(214, 217, 216);
 }
 .float-right-col {
-    width: 770px;
+    width: 100%;
+
+    @media (min-width: 680px) {
+        width: 50%;
+    }
+    @media (min-width: 1200px) {
+        width: 770px;
+    }
 }
 .float-right-col p {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 1.6;
     font-weight: 400;
+    
+    @media (min-width: 1200px) {
+        font-size: 20px;
+    }
 }
 .float-right-col p:first-of-type {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+
+    }
 }
 .float-right-col p:last-child {
     margin-bottom: 0;
@@ -57,12 +100,26 @@
 }
 
 .article-title {
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    @media (min-width: 1200px) {
     margin-bottom: 27px;
     font-size: 54px;
-    font-weight: 700;
+    }
 }
 .article-img {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 23px;
+    }
+    
 }
 .article-img img {
     max-width: 100%;
